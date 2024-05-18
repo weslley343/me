@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #a855f7;
-  --primary-color-dark: #9333ea;
-  --secondary-color: #ca8a04;
+  --primary-color: #313131;
+  --primary-color-dark: #97D2DE;
+  --secondary-color: #97D2DE;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --extra-light: #faf5ff;
+  --extra-light: #fff;
   --max-width: 1200px;
 }
 
@@ -21,6 +21,10 @@ a {
 }
 
 body {
+  background-image: url("assets/projectphoto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 
@@ -48,6 +52,7 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
@@ -59,6 +64,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -93,7 +99,7 @@ ul li a:hover {
 }
 
 .section__container {
-  min-height: 100vh;
+  min-height: 80vh;
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -145,7 +151,6 @@ ul li a:hover {
   padding: 1rem 2rem;
   outline: none;
   border: 2px solid var(--primary-color);
-  border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -195,7 +200,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  nav #check:checked ~ ul {
+  nav #check:checked~ul {
     left: 0;
   }
 
@@ -216,4 +221,72 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+}
+
+
+/*-----------------------*/
+
+.topic{
+  padding: 5rem;
+  text-align: center;
+}
+.topic h1 {
+  color: #f9f9f9;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.card {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  color: #fff;
+  width: 20rem;
+
+}
+
+.card h1 {
+  margin: 1rem;
+  text-indent: 1rem;
+}
+
+.card p {
+  margin: 1rem;
+  text-indent: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card a {
+  color: #fff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  background: #151515;
+}
+
+.card a:hover {
+  color: #fff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  background: #191919;
+}
+
+.topic h1{
+  text-align: center;
+
 }
